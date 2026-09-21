@@ -1,0 +1,294 @@
+/* ==========================================================================
+   Layout — header, navegação, rodapé, WhatsApp flutuante e banner de
+   cookies. Compartilhado por todas as páginas do site (index, obrigado,
+   privacidade...).
+   ========================================================================== */
+
+/* Top Bar */
+.top-bar {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 8px 10%;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar a {
+    color: var(--white);
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+/* Header */
+header {
+    background-color: var(--white);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 17px;
+    font-weight: bold;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    height: 80px;
+    width: auto;
+}
+
+.logo span {
+    color: var(--secondary-color);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--dark-text);
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--secondary-color);
+}
+
+.btn-cta {
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn-cta:hover {
+    background-color: #e68a2e;
+}
+
+/* Wrapper do menu — no desktop não participa do layout (fica "invisível" para o
+   flex do header), então nav e botão continuam exatamente como antes.
+   No mobile ele vira o painel do menu hambúrguer (ver media query abaixo). */
+.nav-wrapper {
+    display: contents;
+}
+
+/* Botão hambúrguer — só existe visualmente no mobile */
+.menu-toggle {
+    display: none;
+}
+
+/* Botão flutuante do WhatsApp — visível em qualquer tamanho de tela */
+.whatsapp-float {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 56px;
+    height: 56px;
+    background-color: #25D366;
+    color: var(--white);
+    border-radius: 50%;
+    font-size: 28px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.3);
+    z-index: 1500;
+    text-decoration: none;
+    transition: transform 0.2s ease;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.08);
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 40px 10% 20px 10%;
+    text-align: center;
+    font-size: 14px;
+}
+
+.footer-content {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    color: var(--white);
+    text-decoration: none;
+    margin: 0 15px;
+    opacity: 0.8;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+}
+
+/* Banner de cookies (LGPD) */
+.cookie-banner {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2000;
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 18px 24px;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    box-shadow: 0 -4px 14px rgba(0,0,0,0.2);
+}
+
+.cookie-banner.visible {
+    display: flex;
+}
+
+.cookie-banner p {
+    margin: 0;
+    font-size: 14px;
+    max-width: 700px;
+    color: var(--white);
+}
+
+.cookie-banner a {
+    color: var(--white);
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+.cookie-banner-actions {
+    flex-shrink: 0;
+}
+
+.btn-cookie-aceitar {
+    background-color: var(--accent-color);
+    color: var(--white);
+    border: none;
+    padding: 10px 24px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+.btn-cookie-aceitar:hover {
+    background-color: #e68a2e;
+}
+
+/* Responsividade (mobile) */
+@media (max-width: 768px) {
+    .top-bar { display: none; }
+
+    header {
+        flex-wrap: wrap;
+        position: relative;
+    }
+
+    /* Botão hambúrguer */
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 26px;
+        height: 18px;
+        background: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .menu-toggle span {
+        display: block;
+        height: 3px;
+        width: 100%;
+        background-color: var(--primary-color);
+        border-radius: 2px;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .menu-toggle.active span:nth-child(1) {
+        transform: translateY(7.5px) rotate(45deg);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+        transform: translateY(-7.5px) rotate(-45deg);
+    }
+
+    /* Painel do menu — fechado por padrão, some do fluxo do header */
+    .nav-wrapper {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .nav-wrapper.open {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 14px;
+    }
+
+    .nav-wrapper .btn-cta {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        width: fit-content;
+    }
+
+    /* Botão flutuante do WhatsApp — no mobile fica um pouco menor e mais próximo da borda */
+    .whatsapp-float {
+        width: 52px;
+        height: 52px;
+        bottom: 16px;
+        right: 16px;
+        font-size: 26px;
+    }
+
+    /* Banner de cookies — texto e botão empilhados no mobile */
+    .cookie-banner {
+        flex-direction: column;
+        text-align: center;
+        padding: 16px;
+    }
+}

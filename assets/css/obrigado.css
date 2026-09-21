@@ -1,0 +1,80 @@
+/* ==========================================================================
+   Obrigado — estilos específicos da página de confirmação (obrigado.html)
+   ========================================================================== */
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: var(--light-bg);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.card {
+    background: var(--white);
+    border-radius: 12px;
+    box-shadow: 0 10px 40px rgba(15, 44, 89, 0.1);
+    padding: 50px 40px;
+    max-width: 480px;
+    width: 100%;
+    text-align: center;
+}
+
+.check-icon {
+    width: 72px;
+    height: 72px;
+    background: #e7f4ea;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+}
+
+.check-icon svg {
+    width: 36px;
+    height: 36px;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 24px;
+    margin-bottom: 14px;
+}
+
+p {
+    color: var(--muted-text);
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.btn-voltar {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--white);
+    padding: 13px 32px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 15px;
+    transition: background-color 0.3s;
+}
+
+.btn-voltar:hover {
+    background-color: #e8890f;
+}
+
+.whatsapp-link {
+    display: block;
+    margin-top: 20px;
+    color: var(--secondary-color);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.whatsapp-link:hover {
+    text-decoration: underline;
+}
