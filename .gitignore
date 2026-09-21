@@ -1,0 +1,19 @@
+# Credenciais e dados sensíveis — nunca versionar
+privado-nao-subir/
+dominio-orprocon.txt
+senha-area-do-cliente.txt
+
+# Arquivos de sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editores
+.vscode/
+.idea/
+*.swp
+
+# Backups e temporários
+*.bak
+*.tmp
+*~
