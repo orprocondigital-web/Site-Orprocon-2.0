@@ -3,11 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mensagem Enviada | Orprocon Contabilidade</title>
+    <title>Mensagem Enviada com Sucesso | Orprocon Contabilidade</title>
     <meta name="robots" content="noindex, follow">
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <!-- Google Fonts & Font Awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/layout.css">
     <link rel="stylesheet" href="assets/css/obrigado.css">
@@ -16,14 +23,23 @@
     <div class="card">
         <div class="check-icon">
             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M20 6L9 17L4 12" stroke="#1e7d34" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M20 6L9 17L4 12" stroke="#1E7D34" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
         </div>
-        <h1>Obrigado, sua mensagem foi enviada com sucesso!!</h1>
-        <p>Recebemos seu contato e um de nossos especialistas vai retornar em breve. Enviamos também uma confirmação para o seu e-mail.</p>
-        <a href="index.html" class="btn-voltar">Voltar ao Site</a>
-        <a href="https://wa.me/5548991781362" class="whatsapp-link" target="_blank">Ou fale agora pelo WhatsApp (48) 99178-1362</a>
-        <a href="privacidade.html" class="whatsapp-link" style="display:block; margin-top:10px;">Política de Privacidade</a>
+        <h1>Mensagem Enviada com Sucesso!</h1>
+        <p>Agradecemos seu contato com a <strong>Orprocon Contabilidade</strong>. Nossa equipe de especialistas já recebeu seus dados e retornará em breve.</p>
+        
+        <div style="display: flex; flex-direction: column; gap: 12px; align-items: center;">
+            <a href="index.html" class="btn-voltar">
+                <i class="fa-solid fa-arrow-left"></i> Voltar à Página Inicial
+            </a>
+            <a href="https://wa.me/5548991781362?text=Ol%C3%A1!%20Acabei%20de%20enviar%20uma%20mensagem%20no%20site%20e%20gostaria%20de%20adiantar%20meu%20atendimento." class="whatsapp-link" target="_blank" rel="noopener">
+                <i class="fa-brands fa-whatsapp"></i> Ou adiante seu atendimento pelo WhatsApp: (48) 99178-1362
+            </a>
+            <a href="privacidade.html" class="whatsapp-link" style="font-size: 12.5px; opacity: 0.8; margin-top: 8px;">
+                Política de Privacidade
+            </a>
+        </div>
     </div>
 
     <!-- Banner de cookies (LGPD) -->

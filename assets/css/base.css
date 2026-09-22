@@ -1,26 +1,53 @@
 /* ==========================================================================
-   Base — variáveis de cor e reset, compartilhado por todas as páginas
+   Base — variáveis de cor, tipografia e reset, compartilhado por todas as páginas
    ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
 
 :root {
     --primary-color: #0F2C59;
-    --secondary-color: #3F72AF;
-    --accent-color: #FF9F43;
-    --light-bg: #F9F7F7;
-    --dark-text: #1E2022;
-    --muted-text: #686D76;
+    --primary-dark: #091C38;
+    --secondary-color: #1F4E78;
+    --secondary-light: #3F72AF;
+    --accent-color: #E68A2E;
+    --accent-hover: #CD741D;
+    --gold: #D4AF37;
+    --gold-light: #FFF8E7;
+    --light-bg: #F4F7FB;
+    --card-bg: #FFFFFF;
+    --dark-text: #1E252D;
+    --muted-text: #5A626A;
+    --border-color: #E2E8F0;
+    --whatsapp-green: #25D366;
+    --whatsapp-hover: #1EBE5D;
     --white: #FFFFFF;
+    --shadow-sm: 0 2px 8px rgba(15, 44, 89, 0.06);
+    --shadow-md: 0 8px 24px rgba(15, 44, 89, 0.08);
+    --shadow-lg: 0 16px 36px rgba(15, 44, 89, 0.12);
+    --transition: all 0.25s ease-in-out;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
 body {
     color: var(--dark-text);
     background-color: var(--white);
     line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }

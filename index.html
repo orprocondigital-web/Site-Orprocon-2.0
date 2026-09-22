@@ -3,54 +3,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orprocon Contabilidade | Gestão Contábil em Tubarão - SC</title>
-    <meta name="description" content="Contabilidade em Tubarão - SC: abertura de empresas, gestão contábil, departamento pessoal e fiscal, planejamento tributário e certificação digital. Fale com a Orprocon.">
+    <title>Orprocon Contabilidade | 50 Anos de Gestão Contábil em Tubarão - SC</title>
+    <meta name="description" content="Há 50 anos prestando serviços de contabilidade com excelência em Tubarão - SC: abertura de empresas, gestão contábil, fiscal, departamento pessoal e planejamento tributário.">
     <link rel="canonical" href="https://clientesorprocon.com.br/">
 
     <!-- Favicon -->
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-    <!-- Open Graph / redes sociais -->
+    <!-- Open Graph / Redes Sociais -->
     <meta property="og:type" content="website">
     <meta property="og:locale" content="pt_BR">
     <meta property="og:site_name" content="Orprocon Contabilidade">
-    <meta property="og:title" content="Orprocon Contabilidade | Gestão Contábil em Tubarão - SC">
-    <meta property="og:description" content="Abertura de empresas, gestão contábil, departamento pessoal e fiscal, planejamento tributário e certificação digital em Tubarão - SC.">
+    <meta property="og:title" content="Orprocon Contabilidade | 50 Anos de Gestão Contábil em Tubarão - SC">
+    <meta property="og:description" content="Tradição de 50 anos e inovação contábil para sua empresa pagar menos impostos e crescer com segurança em Tubarão - SC.">
     <meta property="og:url" content="https://clientesorprocon.com.br/">
     <meta property="og:image" content="https://clientesorprocon.com.br/assets/img/hero-banner.png">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Orprocon Contabilidade | Gestão Contábil em Tubarão - SC">
-    <meta name="twitter:description" content="Abertura de empresas, gestão contábil, departamento pessoal e fiscal, planejamento tributário e certificação digital em Tubarão - SC.">
+    <meta name="twitter:title" content="Orprocon Contabilidade | 50 Anos de Gestão Contábil em Tubarão - SC">
+    <meta name="twitter:description" content="Tradição de 50 anos e inovação contábil para sua empresa crescer com segurança jurídica e fiscal em Tubarão - SC.">
     <meta name="twitter:image" content="https://clientesorprocon.com.br/assets/img/hero-banner.png">
 
+    <!-- Google Fonts & Font Awesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Estilos do Site -->
     <link rel="stylesheet" href="assets/css/base.css">
     <link rel="stylesheet" href="assets/css/layout.css">
     <link rel="stylesheet" href="assets/css/home.css">
 
-    <!-- Dados estruturados (Schema.org) para o Google -->
+    <!-- Dados Estruturados Schema.org para o Google -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "AccountingService",
-        "name": "Orprocon Contabilidade",
-        "image": "https://clientesorprocon.com.br/assets/img/logo-orprocon.png",
-        "url": "https://clientesorprocon.com.br/",
-        "telephone": "+55-48-3052-3288",
-        "email": "contato@orprocon.com.br",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Av. Marcolino Martins Cabral",
-            "addressLocality": "Tubarão",
-            "addressRegion": "SC",
-            "postalCode": "88701-001",
-            "addressCountry": "BR"
-        }
+        "@graph": [
+            {
+                "@type": "AccountingService",
+                "@id": "https://clientesorprocon.com.br/#organization",
+                "name": "Orprocon Contabilidade",
+                "alternateName": "Orprocon Empresa Contábil",
+                "image": "https://clientesorprocon.com.br/assets/img/logo-orprocon.png",
+                "url": "https://clientesorprocon.com.br/",
+                "telephone": "+55-48-3052-3288",
+                "email": "contato@orprocon.com.br",
+                "priceRange": "$$",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Av. Marcolino Martins Cabral, 1315",
+                    "addressLocality": "Tubarão",
+                    "addressRegion": "SC",
+                    "postalCode": "88701-001",
+                    "addressCountry": "BR"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "-28.4746",
+                    "longitude": "-49.0069"
+                },
+                "openingHoursSpecification": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday"
+                    ],
+                    "opens": "08:00",
+                    "closes": "18:00"
+                }
+            },
+            {
+                "@type": "FAQPage",
+                "@id": "https://clientesorprocon.com.br/#faq",
+                "mainEntity": [
+                    {
+                        "@type": "Question",
+                        "name": "Como faço para trocar de contador e trazer minha empresa para a Orprocon?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "É extremamente simples. A Orprocon cuida de todo o processo de transição com seu contador anterior, solicitando os documentos fiscais, livros contábeis e acessos necessários. Você não precisa se preocupar com nenhuma burocracia."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Quanto tempo leva para abrir uma empresa em Tubarão/SC?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Com o processo digital da Junta Comercial de Santa Catarina (JUCESC) e nossa equipe societária ágil, o CNPJ costuma ser emitido entre 24 e 48 horas úteis após a assinatura digital dos sócios."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "A Orprocon atende apenas empresas de Tubarão ou de outras regiões?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Atendemos empresas de toda a região da AMUREL, de Santa Catarina e também clientes em outros estados, graças à nossa infraestrutura contábil 100% digital e segura."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Como o Planejamento Tributário pode reduzir meus impostos?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Realizamos simulações comparativas entre Simples Nacional, Lucro Presumido e Lucro Real, além de verificar benefícios fiscais específicos do seu setor (como Fator R, incentivos fiscais e equiparação hospitalar), garantindo que sua empresa pague apenas o estritamente necessário por lei."
+                        }
+                    },
+                    {
+                        "@type": "Question",
+                        "name": "Como funciona o atendimento no dia a dia?",
+                        "acceptedAnswer": {
+                            "@type": "Answer",
+                            "text": "Você tem contato direto e rápido com nossos especialistas através de WhatsApp corporativo, telefone, e-mail e reuniões presenciais em nossa sede própria no centro de Tubarão. Nada de tickets demorados ou atendimento automatizado."
+                        }
+                    }
+                ]
+            }
+        ]
     }
     </script>
 </head>
@@ -58,13 +134,24 @@
 
     <!-- Top Bar -->
     <div class="top-bar">
-        <div>📍 Av. Marcolino Martins Cabral, Tubarão - SC</div>
-        <div>📞 (48) 3052-3288 | ✉️ contato@orprocon.com.br</div>
+        <div class="top-bar-left">
+            <span><i class="fa-solid fa-location-dot"></i> Av. Marcolino Martins Cabral, 1315, Centro — Tubarão/SC</span>
+            <span class="top-bar-badge"><i class="fa-solid fa-award"></i> 50 ANOS DE TRADIÇÃO</span>
+        </div>
+        <div class="top-bar-right">
+            <a href="tel:+554830523288"><i class="fa-solid fa-phone"></i> (48) 3052-3288</a>
+            <a href="https://wa.me/5548991781362" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> (48) 99178-1362</a>
+            <a href="mailto:contato@orprocon.com.br"><i class="fa-solid fa-envelope"></i> contato@orprocon.com.br</a>
+        </div>
     </div>
 
     <!-- Header -->
     <header>
-        <div class="logo"><img src="assets/img/logo-orprocon.png" alt="Logo Orprocon"></div>
+        <div class="logo">
+            <a href="#home" aria-label="Página Inicial Orprocon">
+                <img src="assets/img/logo-orprocon.png" alt="Orprocon Empresa Contábil">
+            </a>
+        </div>
         <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-wrapper">
             <span></span><span></span><span></span>
         </button>
@@ -74,239 +161,662 @@
                     <li><a href="#home">Início</a></li>
                     <li><a href="#sobre">Quem Somos</a></li>
                     <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#equipe" id="link-equipe">Nossa Equipe</a></li>
+                    <li><a href="#segmentos">Segmentos</a></li>
+                    <li><a href="#diferenciais">Diferenciais</a></li>
+                    <li><a href="#equipe">Equipe</a></li>
+                    <li><a href="#faq">Dúvidas</a></li>
                     <li><a href="#contato">Contato</a></li>
                 </ul>
             </nav>
-            <a href="area-do-cliente/index.html" class="btn-cta">Área do Cliente</a>
         </div>
     </header>
 
-    <!-- Hero -->
-    <section id="home" class="hero"></section>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <i class="fa-solid fa-award"></i> 50 Anos de Sucesso, Tradição e Excelência
+            </div>
+            <h1>Contabilidade Consultiva e Estratégica em <span class="highlight">Tubarão - SC</span></h1>
+            <p class="hero-subtitle">
+                Há cinco décadas cuidando da saúde financeira, fiscal e tributária de empresas que movem a nossa região. Aliamos a solidez da tradição com a inovação digital para reduzir seus impostos e acelerar seu negócio.
+            </p>
+            <div class="hero-buttons">
+                <a href="https://wa.me/5548991781362?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Orprocon%20e%20gostaria%20de%20conversar%20sobre%20servi%C3%A7os%20cont%C3%A1beis." target="_blank" rel="noopener" class="btn-hero-primary">
+                    <i class="fa-brands fa-whatsapp"></i> Falar com um Especialista
+                </a>
+                <a href="#contato" class="btn-hero-secondary">
+                    <i class="fa-solid fa-file-lines"></i> Solicitar Proposta
+                </a>
+            </div>
+            <div class="hero-trust">
+                <div class="trust-item">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>CRC/SC 00328/0 Ativo</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fa-solid fa-user-check"></i>
+                    <span>Atendimento Humanizado</span>
+                </div>
+                <div class="trust-item">
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>Migração Sem Burocracia</span>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Sobre -->
+    <!-- Faixa de Métricas e Autoridade -->
+    <div class="stats-bar">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <div class="stat-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                <div class="stat-info">
+                    <h3>+50 Anos</h3>
+                    <p>De história e credibilidade comprovada</p>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon"><i class="fa-solid fa-users-gear"></i></div>
+                <div class="stat-info">
+                    <h3>17+</h3>
+                    <p>Profissionais especializados em sua empresa</p>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                <div class="stat-info">
+                    <h3>100%</h3>
+                    <p>Foco em segurança e economia tributária</p>
+                </div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+                <div class="stat-info">
+                    <h3>Tubarão/SC</h3>
+                    <p>Sede própria no centro da cidade</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sobre a Orprocon -->
     <section id="sobre" class="about">
         <div class="about-content">
-            <h2 class="section-title" style="text-align: left;">Tradição e Inovação</h2>
-            <p style="margin-top: 20px;">Com décadas de atuação no mercado de Tubarão/SC, a <strong>Orprocon Contabilidade</strong> alia a solidez da experiência tradicional com as ferramentas tecnológicas mais modernas do setor contábil.</p>
-            <p>Nosso objetivo é desburocratizar a gestão fiscal, tributária e trabalhista da sua empresa, permitindo que você foque exclusivamente no que faz de melhor: gerenciar e expandir o seu negócio.</p>
+            <span class="section-tag">QUEM SOMOS</span>
+            <h2 class="section-title">Tradição que Transmite Confiança, Inovação que Gera Resultados</h2>
+            <p>
+                Fundada há 50 anos em Tubarão/SC, a <strong>Orprocon Contabilidade</strong> construiu uma trajetória sólida pautada na ética, responsabilidade e parceria contínua com os empresários de Santa Catarina.
+            </p>
+            <p>
+                Não entregamos apenas guias e relatórios: oferecemos uma <strong>contabilidade consultiva</strong> que desburocratiza a rotina fiscal da sua empresa, orienta tomada de decisões financeiras e garante que você pague o menor imposto previsto em lei.
+            </p>
+
+            <div class="about-pillars">
+                <div class="about-pillar-item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <div>
+                        <strong>Solidez e Credibilidade Histórica</strong>
+                        <span>Cinco décadas de atuação ininterrupta com registro regularizado no CRC/SC.</span>
+                    </div>
+                </div>
+                <div class="about-pillar-item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <div>
+                        <strong>Tecnologia e Desburocratização</strong>
+                        <span>Sistemas digitais seguros que eliminam papéis e aceleram o envio de documentos.</span>
+                    </div>
+                </div>
+                <div class="about-pillar-item">
+                    <i class="fa-solid fa-circle-check"></i>
+                    <div>
+                        <strong>Atendimento Próximo e Sem Robôs</strong>
+                        <span>Você conversa diretamente com contadores experientes que conhecem o seu negócio.</span>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="about-image">
-            <img src="assets/img/escritorio.jpg" alt="Escritório Contábil Orprocon">
+            <div class="about-image-wrapper">
+                <img src="assets/img/escritorio.jpg" alt="Escritório da Orprocon Contabilidade em Tubarão" loading="lazy">
+            </div>
+            <div class="about-badge">
+                <i class="fa-solid fa-building"></i>
+                <div>
+                    <strong>Sede Própria no Centro</strong>
+                    <span>Av. Marcolino Martins Cabral, 1315</span>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Serviços -->
     <section id="servicos" class="services">
-        <h2 class="section-title">Nossas Soluções</h2>
-        <p class="section-subtitle">Serviços especializados para cada etapa e necessidade da sua empresa</p>
-        
+        <div class="section-header">
+            <span class="section-tag">NOSSAS SOLUÇÕES</span>
+            <h2 class="section-title">Serviços Contábeis Especializados para Cada Etapa do Seu Negócio</h2>
+            <p class="section-subtitle">Soluções integradas para empresas do Simples Nacional, Lucro Presumido e Lucro Real.</p>
+        </div>
+
         <div class="services-grid">
             <div class="service-card">
-                <div class="service-icon"><i class="fa-solid fa-building"></i></div>
+                <div class="service-icon"><i class="fa-solid fa-building-flag"></i></div>
                 <h3>Abertura de Empresas</h3>
-                <p>Orientação na escolha do melhor tipo jurídico, planejamento tributário inicial e emissão de alvarás de forma ágil e segura.</p>
+                <p>Estudo prévio de viabilidade, enquadramento societário mais vantajoso, obtenção rápida de CNPJ e alvarás sem complicações.</p>
+                <a href="https://wa.me/5548991781362?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Abertura%20de%20Empresas." target="_blank" rel="noopener" class="service-cta">
+                    Falar com especialista <i class="fa-solid fa-arrow-right"></i>
+                </a>
             </div>
+
             <div class="service-card">
-                <div class="service-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                <div class="service-icon"><i class="fa-solid fa-chart-line"></i></div>
                 <h3>Gestão Contábil</h3>
-                <p>Elaboração de balancetes, balanços patrimoniais e relatórios gerenciais precisos para dar suporte às suas decisões financeiras.</p>
+                <p>Elaboração precisa de balancetes, DRE, balanços patrimoniais e relatórios gerenciais claros para dar suporte às suas decisões financeiras.</p>
+                <a href="https://wa.me/5548991781362?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Gest%C3%A3o%20Cont%C3%A1bil." target="_blank" rel="noopener" class="service-cta">
+                    Falar com especialista <i class="fa-solid fa-arrow-right"></i>
+                </a>
             </div>
+
             <div class="service-card">
                 <div class="service-icon"><i class="fa-solid fa-scale-balanced"></i></div>
                 <h3>Planejamento Tributário</h3>
-                <p>Análise detalhada para enquadrar sua empresa no regime mais econômico (Simples Nacional, Lucro Presumido ou Real), reduzindo impostos legalmente.</p>
+                <p>Análise minuciosa para enquadrar sua empresa no regime fiscal mais econômico e seguro, reduzindo custos tributários legalmente.</p>
+                <a href="https://wa.me/5548991781362?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Planejamento%20Tribut%C3%A1rio." target="_blank" rel="noopener" class="service-cta">
+                    Falar com especialista <i class="fa-solid fa-arrow-right"></i>
+                </a>
             </div>
+
             <div class="service-card">
                 <div class="service-icon"><i class="fa-solid fa-users"></i></div>
                 <h3>Departamento Pessoal</h3>
-                <p>Gestão completa da folha de pagamento, admissões, demissões, eSocial, férias e todas as obrigações trabalhistas da sua equipe.</p>
+                <p>Gestão completa da folha de pagamento, admissões, rescisões, férias, conformidade com o eSocial e proteção nas relações trabalhistas.</p>
+                <a href="https://wa.me/5548991781362?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Departamento%20Pessoal." target="_blank" rel="noopener" class="service-cta">
+                    Falar com especialista <i class="fa-solid fa-arrow-right"></i>
+                </a>
             </div>
+
             <div class="service-card">
                 <div class="service-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
                 <h3>Departamento Fiscal</h3>
-                <p>Apuração de impostos, emissão de guias e entrega das obrigações acessórias dentro dos prazos, garantindo total conformidade fiscal.</p>
+                <p>Apuração rigorosa de tributos municipais, estaduais e federais, emissão de guias e entrega de obrigações acessórias sem risco de multas.</p>
+                <a href="https://wa.me/5548991781362?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Departamento%20Fiscal." target="_blank" rel="noopener" class="service-cta">
+                    Falar com especialista <i class="fa-solid fa-arrow-right"></i>
+                </a>
             </div>
+
             <div class="service-card">
                 <div class="service-icon"><i class="fa-solid fa-file-contract"></i></div>
                 <h3>Departamento Societário</h3>
-                <p>Alterações contratuais, distribuição de lucros, transformação societária e todo o suporte jurídico-contábil para a estrutura da sua empresa.</p>
+                <p>Alterações contratuais, entrada e saída de sócios, transformação de tipos jurídicos, cisões, incorporações e regularizações empresariais.</p>
+                <a href="https://wa.me/5548991781362?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Departamento%20Societ%C3%A1rio." target="_blank" rel="noopener" class="service-cta">
+                    Falar com especialista <i class="fa-solid fa-arrow-right"></i>
+                </a>
             </div>
+
             <div class="service-card">
-                <div class="service-icon"><i class="fa-solid fa-certificate"></i></div>
+                <div class="service-icon"><i class="fa-solid fa-id-card-clip"></i></div>
                 <h3>Certificação Digital</h3>
-                <p>Emissão e renovação de certificados digitais e-CPF e e-CNPJ, garantindo acesso seguro aos órgãos públicos e sistemas fiscais.</p>
+                <p>Emissão e renovação de certificados digitais e-CNPJ e e-CPF para garantir segurança total nas transmissões eletrônicas da sua empresa.</p>
+                <a href="https://wa.me/5548991781362?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Certificado%20Digital." target="_blank" rel="noopener" class="service-cta">
+                    Falar com especialista <i class="fa-solid fa-arrow-right"></i>
+                </a>
             </div>
+
             <div class="service-card">
                 <div class="service-icon"><i class="fa-solid fa-stamp"></i></div>
                 <h3>Gestão de Alvarás</h3>
-                <p>Emissão, renovação e regularização de alvarás e licenças municipais, estaduais e sanitárias para manter sua empresa em conformidade.</p>
+                <p>Acompanhamento preventivo de prazos, renovação de alvarás de funcionamento, vigilância sanitária e certidões junto a órgãos públicos.</p>
+                <a href="https://wa.me/5548991781362?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20Gest%C3%A3o%20de%20Alvar%C3%A1s." target="_blank" rel="noopener" class="service-cta">
+                    Falar com especialista <i class="fa-solid fa-arrow-right"></i>
+                </a>
             </div>
         </div>
     </section>
 
-    <!-- Nossa Equipe -->
+    <!-- Segmentos Atendidos -->
+    <section id="segmentos" class="segments">
+        <div class="section-header">
+            <span class="section-tag">ESPECIALIDADES</span>
+            <h2 class="section-title">Soluções Adaptadas para a Realidade do Seu Setor</h2>
+            <p class="section-subtitle">Conhecemos a fundo a legislação e as particularidades de cada atividade econômica.</p>
+        </div>
+
+        <div class="segments-grid">
+            <div class="segment-card">
+                <div class="segment-icon"><i class="fa-solid fa-stethoscope"></i></div>
+                <h3>Saúde & Clínicas Médicas</h3>
+                <p>Planejamento para médicos, dentistas e clínicas com foco em equiparação hospitalar, Livro-Caixa e redução substancial de IRPJ e CSLL.</p>
+                <span class="segment-badge">Economia Tributária para Médicos</span>
+            </div>
+
+            <div class="segment-card">
+                <div class="segment-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+                <h3>Comércio & Varejo</h3>
+                <p>Orientação precisa sobre ICMS, substituição tributária, controle de estoques, emissão de NFC-e e cruzamento fiscal sem riscos.</p>
+                <span class="segment-badge">Conformidade e Redução de Custos</span>
+            </div>
+
+            <div class="segment-card">
+                <div class="segment-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                <h3>Prestadores de Serviços & TI</h3>
+                <p>Enquadramento correto no Simples Nacional com aplicação do Fator R, emissão de NFS-e e contabilidade sem fricção para profissionais liberais.</p>
+                <span class="segment-badge">Agilidade 100% Digital</span>
+            </div>
+
+            <div class="segment-card">
+                <div class="segment-icon"><i class="fa-solid fa-helmet-safety"></i></div>
+                <h3>Engenharia & Construção Civil</h3>
+                <p>Gestão contábil de obras, cadastro CNO, regularização junto à Receita Federal, retenções na fonte e desoneração da folha.</p>
+                <span class="segment-badge">Segurança em Grandes Obras</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Diferenciais -->
+    <section id="diferenciais" class="differentials">
+        <div class="section-header">
+            <span class="section-tag">POR QUE A ORPROCON?</span>
+            <h2 class="section-title">O Que Torna a Orprocon a Escolha Certa Para o Seu Negócio</h2>
+            <p class="section-subtitle">Mais do que cumprir obrigações, somos parceiros do crescimento seguro da sua empresa.</p>
+        </div>
+
+        <div class="differentials-grid">
+            <div class="differential-card">
+                <div class="differential-icon"><i class="fa-solid fa-handshake-angle"></i></div>
+                <h3>Atendimento Próximo e Humano</h3>
+                <p>Você tem canal direto com contadores experientes que respondem suas dúvidas sem enrolação e sem menus telefônicos intermináveis.</p>
+            </div>
+
+            <div class="differential-card">
+                <div class="differential-icon"><i class="fa-solid fa-money-bill-trend-up"></i></div>
+                <h3>Inteligência Tributária Contínua</h3>
+                <p>Revisamos anualmente o regime de tributação da sua empresa para garantir que ela esteja sempre na opção que recolhe menos impostos.</p>
+            </div>
+
+            <div class="differential-card">
+                <div class="differential-icon"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+                <h3>Troca de Contador Sem Estresse</h3>
+                <p>Cuidamos de 100% da transição burocrática com o escritório anterior. Sua empresa migra sem parar de faturar e sem riscos.</p>
+            </div>
+
+            <div class="differential-card">
+                <div class="differential-icon"><i class="fa-solid fa-award"></i></div>
+                <h3>50 Anos de Segurança Jurídica</h3>
+                <p>Meio século de reputação ilibada em Tubarão e Santa Catarina, com conformidade total às normas do Conselho Regional de Contabilidade.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Nossa Equipe (Visível no Fluxo) -->
     <section id="equipe" class="team">
-        <div class="team-content" id="team-content">
-            <h2 class="section-title">Nossa Equipe</h2>
-            <p class="section-subtitle">Profissionais dedicados a cuidar da contabilidade da sua empresa</p>
+        <div class="section-header">
+            <span class="section-tag">QUEM FAZ ACONTECER</span>
+            <h2 class="section-title">Nossa Equipe de Especialistas</h2>
+            <p class="section-subtitle">Profissionais altamente capacitados dedicados a cuidar da contabilidade da sua empresa com zelo e precisão técnica. Clique na foto para ampliar.</p>
+        </div>
 
-            <div class="team-grid" id="team-grid">
-                <div class="team-card">
-                    <img src="assets/img/equipe/01-carlos-roberto.jpg" alt="Membro da equipe Orprocon">
+        <div class="team-grid" id="team-grid">
+            <div class="team-card">
+                <img src="assets/img/equipe/01-carlos-roberto.jpg" alt="Carlos Roberto Truá - Diretor da Orprocon Contabilidade" loading="lazy">
+                <span class="team-zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+            <div class="team-card">
+                <img src="assets/img/equipe/02-andrei.jpg" alt="Andrei - Gerente da Orprocon Contabilidade" loading="lazy">
+                <span class="team-zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+            <div class="team-card">
+                <img src="assets/img/equipe/03-eliane.jpg" alt="Eliane - Equipe Orprocon Contabilidade" loading="lazy">
+                <span class="team-zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+            <div class="team-card">
+                <img src="assets/img/equipe/04-mario-henrique.jpg" alt="Mario Henrique - Equipe Orprocon Contabilidade" loading="lazy">
+                <span class="team-zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+            <div class="team-card">
+                <img src="assets/img/equipe/05-chay.jpg" alt="Chay - Equipe Orprocon Contabilidade" loading="lazy">
+                <span class="team-zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+            <div class="team-card">
+                <img src="assets/img/equipe/06-ezequiel.jpg" alt="Ezequiel - Equipe Orprocon Contabilidade" loading="lazy">
+                <span class="team-zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+            <div class="team-card">
+                <img src="assets/img/equipe/07-katia.jpg" alt="Katia - Equipe Orprocon Contabilidade" loading="lazy">
+                <span class="team-zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+            <div class="team-card">
+                <img src="assets/img/equipe/08-karla-lopes.jpg" alt="Karla Lopes - Equipe Orprocon Contabilidade" loading="lazy">
+                <span class="team-zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+            <div class="team-card">
+                <img src="assets/img/equipe/09-mariana.jpg" alt="Mariana - Equipe Orprocon Contabilidade" loading="lazy">
+                <span class="team-zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+            <div class="team-card">
+                <img src="assets/img/equipe/10-sandro.jpg" alt="Sandro - Equipe Orprocon Contabilidade" loading="lazy">
+                <span class="team-zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+            <div class="team-card">
+                <img src="assets/img/equipe/11-jessica.jpg" alt="Jéssica - Equipe Orprocon Contabilidade" loading="lazy">
+                <span class="team-zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+            <div class="team-card">
+                <img src="assets/img/equipe/12-karla.jpg" alt="Karla - Equipe Orprocon Contabilidade" loading="lazy">
+                <span class="team-zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+            <div class="team-card">
+                <img src="assets/img/equipe/13-reginaldo.jpg" alt="Reginaldo - Equipe Orprocon Contabilidade" loading="lazy">
+                <span class="team-zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+            <div class="team-card">
+                <img src="assets/img/equipe/14-naiara.jpg" alt="Naiara - Equipe Orprocon Contabilidade" loading="lazy">
+                <span class="team-zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+            <div class="team-card">
+                <img src="assets/img/equipe/15-gisele.jpg" alt="Gisele - Equipe Orprocon Contabilidade" loading="lazy">
+                <span class="team-zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+            <div class="team-card">
+                <img src="assets/img/equipe/16-narhel.jpg" alt="Narhel - Equipe Orprocon Contabilidade" loading="lazy">
+                <span class="team-zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+            <div class="team-card">
+                <img src="assets/img/equipe/17-luiz-antonio.jpg" alt="Luiz Antonio - Equipe Orprocon Contabilidade" loading="lazy">
+                <span class="team-zoom-hint"><i class="fa-solid fa-magnifying-glass-plus"></i></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ (Perguntas Frequentes) -->
+    <section id="faq" class="faq">
+        <div class="section-header">
+            <span class="section-tag">TIRE SUAS DÚVIDAS</span>
+            <h2 class="section-title">Perguntas Frequentes de Nossos Clientes</h2>
+            <p class="section-subtitle">Tudo o que você precisa saber sobre a troca de contador, abertura de empresas e nossa metodologia.</p>
+        </div>
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Como faço para trocar de contador e vir para a Orprocon?</h3>
+                    <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
                 </div>
-                <div class="team-card">
-                    <img src="assets/img/equipe/02-andrei.jpg" alt="Membro da equipe Orprocon">
+                <div class="faq-answer">
+                    <p>É extremamente simples! Você só precisa manifestar seu desejo de trocar de escritório. A equipe da Orprocon entra em contato com seu contador anterior, solicita toda a documentação legal e histórico contábil, e realiza a transição sem nenhuma interrupção nas atividades da sua empresa.</p>
                 </div>
-                <div class="team-card">
-                    <img src="assets/img/equipe/03-eliane.jpg" alt="Membro da equipe Orprocon">
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Quanto tempo leva para abrir uma empresa em Tubarão/SC?</h3>
+                    <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
                 </div>
-                <div class="team-card">
-                    <img src="assets/img/equipe/04-mario-henrique.jpg" alt="Membro da equipe Orprocon">
+                <div class="faq-answer">
+                    <p>Através do sistema 100% digital da Junta Comercial de Santa Catarina (JUCESC) e da agilidade do nosso departamento societário, a emissão do CNPJ costuma ocorrer entre 24 e 48 horas úteis após a assinatura digital dos sócios.</p>
                 </div>
-                <div class="team-card">
-                    <img src="assets/img/equipe/05-chay.jpg" alt="Membro da equipe Orprocon">
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>A Orprocon atende apenas empresas de Tubarão ou de outras cidades?</h3>
+                    <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
                 </div>
-                <div class="team-card">
-                    <img src="assets/img/equipe/06-ezequiel.jpg" alt="Membro da equipe Orprocon">
+                <div class="faq-answer">
+                    <p>Atendemos empresas de toda a região da AMUREL (Capivari de Baixo, Laguna, Braço do Norte, Jaguaruna, etc.), de todo o estado de Santa Catarina e também clientes em outras regiões do Brasil, graças à nossa estrutura digital segura e em nuvem.</p>
                 </div>
-                <div class="team-card">
-                    <img src="assets/img/equipe/07-katia.jpg" alt="Membro da equipe Orprocon">
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Como o Planejamento Tributário reduz o valor dos meus impostos?</h3>
+                    <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
                 </div>
-                <div class="team-card">
-                    <img src="assets/img/equipe/08-karla-lopes.jpg" alt="Membro da equipe Orprocon">
+                <div class="faq-answer">
+                    <p>Realizamos uma simulação detalhada comparando os regimes do Simples Nacional, Lucro Presumido e Lucro Real, além de identificar benefícios fiscais como o Fator R (para prestadores de serviços), incentivos e equiparação hospitalar para clínicas. O objetivo é assegurar o menor imposto previsto na lei.</p>
                 </div>
-                <div class="team-card">
-                    <img src="assets/img/equipe/09-mariana.jpg" alt="Membro da equipe Orprocon">
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <h3>Como funciona o suporte e o atendimento no dia a dia?</h3>
+                    <span class="faq-icon"><i class="fa-solid fa-chevron-down"></i></span>
                 </div>
-                <div class="team-card">
-                    <img src="assets/img/equipe/10-sandro.jpg" alt="Membro da equipe Orprocon">
-                </div>
-                <div class="team-card">
-                    <img src="assets/img/equipe/11-jessica.jpg" alt="Membro da equipe Orprocon">
-                </div>
-                <div class="team-card">
-                    <img src="assets/img/equipe/12-karla.jpg" alt="Membro da equipe Orprocon">
-                </div>
-                <div class="team-card">
-                    <img src="assets/img/equipe/13-reginaldo.jpg" alt="Membro da equipe Orprocon">
-                </div>
-                <div class="team-card">
-                    <img src="assets/img/equipe/14-naiara.jpg" alt="Membro da equipe Orprocon">
-                </div>
-                <div class="team-card">
-                    <img src="assets/img/equipe/15-gisele.jpg" alt="Membro da equipe Orprocon">
-                </div>
-                <div class="team-card">
-                    <img src="assets/img/equipe/16-narhel.jpg" alt="Membro da equipe Orprocon">
-                </div>
-                <div class="team-card">
-                    <img src="assets/img/equipe/17-luiz-antonio.jpg" alt="Membro da equipe Orprocon">
+                <div class="faq-answer">
+                    <p>Você tem atendimento direto e humanizado via WhatsApp corporativo, telefone e e-mail com o setor responsável pelo seu assunto (Fiscal, Pessoal, Contábil ou Societário), além de poder agendar reuniões presenciais em nossa sede própria no centro de Tubarão.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contato -->
+    <!-- Contato & Proposta -->
     <section id="contato" class="contact">
-        <h2 class="section-title">Solicite uma Consultoria</h2>
-        <p class="section-subtitle" style="text-align: center;">Preencha o formulário abaixo e um de nossos especialistas entrará em contato</p>
+        <div class="section-header">
+            <span class="section-tag">VAMOS CONVERSAR?</span>
+            <h2 class="section-title">Solicite uma Consultoria ou Proposta Personalizada</h2>
+            <p class="section-subtitle">Preencha o formulário e um de nossos especialistas entrará em contato rapidamente.</p>
+        </div>
 
         <div class="contact-container">
             <div class="contact-info">
-                <h3>Informações de Contato</h3>
-                <div class="info-item">
-                    <span><i class="fa-solid fa-location-dot"></i></span>
-                    <div>
-                        <strong>Endereço:</strong>
-                        <p>Av. Marcolino Martins Cabral, Centro<br>Tubarão - SC, CEP 88701-001</p>
+                <div class="contact-info-card">
+                    <h3>Nossos Canais de Contato</h3>
+                    <div class="info-item">
+                        <span class="icon"><i class="fa-solid fa-location-dot"></i></span>
+                        <div>
+                            <strong>Endereço:</strong>
+                            <p>Av. Marcolino Martins Cabral, 1315 — Centro<br>Tubarão - SC, CEP 88701-001</p>
+                            <a href="https://maps.google.com/?q=Av.+Marcolino+Martins+Cabral,+1315,+Tubarao+-+SC" target="_blank" rel="noopener" style="font-size: 13px; color: var(--secondary-color); font-weight: 600;">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i> Ver no Google Maps
+                            </a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon"><i class="fa-solid fa-phone"></i></span>
+                        <div>
+                            <strong>Telefone Fixo:</strong>
+                            <p><a href="tel:+554830523288">(48) 3052-3288</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon"><i class="fa-brands fa-whatsapp"></i></span>
+                        <div>
+                            <strong>WhatsApp Direto:</strong>
+                            <p><a href="https://wa.me/5548991781362" target="_blank" rel="noopener">(48) 99178-1362</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon"><i class="fa-solid fa-envelope"></i></span>
+                        <div>
+                            <strong>E-mail:</strong>
+                            <p><a href="mailto:contato@orprocon.com.br">contato@orprocon.com.br</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon"><i class="fa-solid fa-award"></i></span>
+                        <div>
+                            <strong>Registro Profissional:</strong>
+                            <p>CRC/SC 00328/0</p>
+                        </div>
                     </div>
                 </div>
-                <div class="info-item">
-                    <span><i class="fa-solid fa-phone"></i></span>
-                    <div>
-                        <strong>Telefone / WhatsApp:</strong>
-                        <p>(48) 3052-3288</p>
-                    </div>
-                </div>
-                <div class="info-item">
-                    <span><i class="fa-solid fa-envelope"></i></span>
-                    <div>
-                        <strong>E-mail:</strong>
-                        <p>contato@orprocon.com.br</p>
-                    </div>
-                </div>
-                <div class="info-item">
-                    <span><i class="fa-solid fa-id-card"></i></span>
-                    <div>
-                        <strong>Registro:</strong>
-                        <p>CRC/SC 00328/0</p>
-                    </div>
+
+                <div class="contact-quick-whatsapp">
+                    <h4><i class="fa-brands fa-whatsapp"></i> Prefere Falar Agora?</h4>
+                    <p>Fale diretamente com nossa equipe comercial no WhatsApp para tirar dúvidas imediatas sobre sua empresa.</p>
+                    <a href="https://wa.me/5548991781362?text=Ol%C3%A1!%20Gostaria%20de%20um%20atendimento%20r%C3%A1pido%20para%20minha%20empresa." target="_blank" rel="noopener" class="btn-quick-whatsapp">
+                        Chamar no WhatsApp <i class="fa-solid fa-arrow-right"></i>
+                    </a>
                 </div>
             </div>
 
             <form class="contact-form" action="https://formsubmit.co/contato@orprocon.com.br" method="POST">
-                <input type="hidden" name="_subject" value="Nova mensagem do site Orprocon">
+                <input type="hidden" name="_subject" value="Nova solicitação pelo site Orprocon Contabilidade">
                 <input type="hidden" name="_captcha" value="true">
                 <input type="hidden" name="_template" value="table">
                 <input type="hidden" name="_next" value="https://clientesorprocon.com.br/obrigado.html">
                 <input type="hidden" name="_autoresponse" value="Olá! Recebemos sua mensagem através do site da Orprocon Contabilidade e agradecemos o contato. Nossa equipe já foi notificada e um de nossos especialistas entrará em contato com você em breve. Se preferir, você também pode falar conosco diretamente pelo WhatsApp: (48) 99178-1362. Atenciosamente, Equipe Orprocon.">
 
-                <div class="form-group">
-                    <label for="name">Nome Completo</label>
-                    <input type="text" id="name" name="Nome" required placeholder="Digite seu nome">
+                <h3>Envie sua Mensagem</h3>
+                <p>Retornamos em até 1 dia útil com uma análise preliminar da sua necessidade.</p>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">Nome Completo *</label>
+                        <input type="text" id="name" name="Nome" required placeholder="Digite seu nome completo">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail Corporativo *</label>
+                        <input type="email" id="email" name="email" required placeholder="seu-nome@empresa.com">
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label for="email">E-mail Corporativo</label>
-                    <input type="email" id="email" name="email" required placeholder="Ex: seu-nome@empresa.com">
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="phone">Telefone / WhatsApp *</label>
+                        <input type="tel" id="phone" name="Telefone" required placeholder="(48) 99999-9999">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Serviço de Interesse</label>
+                        <select id="service" name="Servico_Interesse">
+                            <option value="Abertura de Empresa">Quero abrir uma empresa</option>
+                            <option value="Troca de Contador">Quero trocar de contador</option>
+                            <option value="Gestão Contábil / Fiscal">Gestão Contábil e Fiscal</option>
+                            <option value="Planejamento Tributário">Planejamento Tributário</option>
+                            <option value="Certificado Digital">Certificado Digital</option>
+                            <option value="Outro Assunto">Outro assunto</option>
+                        </select>
+                    </div>
                 </div>
+
                 <div class="form-group">
-                    <label for="phone">Telefone / WhatsApp</label>
-                    <input type="tel" id="phone" name="Telefone" required placeholder="(48) 99999-9999">
+                    <label for="message">Como podemos ajudar sua empresa? *</label>
+                    <textarea id="message" name="Mensagem" rows="4" required placeholder="Conte brevemente sobre o segmento da sua empresa, se já possui CNPJ ou o que deseja alcançar..."></textarea>
                 </div>
-                <div class="form-group">
-                    <label for="message">Como podemos ajudar sua empresa?</label>
-                    <textarea id="message" name="Mensagem" rows="4" required placeholder="Descreva brevemente sua necessidade..."></textarea>
+
+                <button type="submit" class="btn-submit">
+                    <i class="fa-solid fa-paper-plane"></i> Enviar Mensagem Agora
+                </button>
+
+                <div class="form-security-note">
+                    <i class="fa-solid fa-lock"></i> Seus dados estão seguros e protegidos em conformidade com a LGPD.
                 </div>
-                <button type="submit" class="btn-submit">Enviar Mensagem</button>
             </form>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Rodapé -->
     <footer>
-        <div class="footer-content">
-            <div class="footer-links">
-                <a href="#home">Início</a>
-                <a href="#sobre">Quem Somos</a>
-                <a href="#servicos">Serviços</a>
-                <a href="#contato">Contato</a>
-                <a href="privacidade.html">Política de Privacidade</a>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="footer-logo">
+                    <img src="assets/img/logo-orprocon.png" alt="Orprocon Contabilidade">
+                </div>
+                <p>
+                    Com 50 anos de solidez em Tubarão/SC, a Orprocon Contabilidade alia experiência consolidada às ferramentas mais modernas para descomplicar a vida fiscal dos negócios.
+                </p>
+                <div class="footer-crc">
+                    <i class="fa-solid fa-shield-halved"></i> Registro CRC/SC 00328/0
+                </div>
+            </div>
+
+            <div class="footer-col">
+                <h4>Navegação</h4>
+                <ul>
+                    <li><a href="#home"><i class="fa-solid fa-angle-right"></i> Início</a></li>
+                    <li><a href="#sobre"><i class="fa-solid fa-angle-right"></i> Quem Somos</a></li>
+                    <li><a href="#servicos"><i class="fa-solid fa-angle-right"></i> Soluções Contábeis</a></li>
+                    <li><a href="#segmentos"><i class="fa-solid fa-angle-right"></i> Segmentos</a></li>
+                    <li><a href="#equipe"><i class="fa-solid fa-angle-right"></i> Nossa Equipe</a></li>
+                    <li><a href="#faq"><i class="fa-solid fa-angle-right"></i> Perguntas Frequentes</a></li>
+                    <li><a href="#contato"><i class="fa-solid fa-angle-right"></i> Fale Conosco</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Nossas Soluções</h4>
+                <ul>
+                    <li><a href="#servicos"><i class="fa-solid fa-angle-right"></i> Abertura de Empresas</a></li>
+                    <li><a href="#servicos"><i class="fa-solid fa-angle-right"></i> Gestão Contábil</a></li>
+                    <li><a href="#servicos"><i class="fa-solid fa-angle-right"></i> Planejamento Tributário</a></li>
+                    <li><a href="#servicos"><i class="fa-solid fa-angle-right"></i> Departamento Pessoal</a></li>
+                    <li><a href="#servicos"><i class="fa-solid fa-angle-right"></i> Departamento Fiscal</a></li>
+                    <li><a href="#servicos"><i class="fa-solid fa-angle-right"></i> Certificação Digital</a></li>
+                    <li><a href="#servicos"><i class="fa-solid fa-angle-right"></i> Gestão de Alvarás</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Atendimento & Sede</h4>
+                <div class="footer-contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        Av. Marcolino Martins Cabral, 1315<br>Centro — Tubarão/SC, CEP 88701-001
+                    </div>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <a href="tel:+554830523288">(48) 3052-3288</a>
+                    </div>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <div>
+                        <a href="https://wa.me/5548991781362" target="_blank" rel="noopener">(48) 99178-1362</a>
+                    </div>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <a href="mailto:contato@orprocon.com.br">contato@orprocon.com.br</a>
+                    </div>
+                </div>
+                <div class="footer-contact-item">
+                    <i class="fa-regular fa-clock"></i>
+                    <div>
+                        Segunda a Sexta: 08:00 às 18:00
+                    </div>
+                </div>
             </div>
         </div>
-        <p>&copy; 2026 Orprocon Contabilidade. Todos os direitos reservados. Tubarão - SC.</p>
+
+        <div class="footer-bottom">
+            <div>
+                &copy; 2026 Orprocon Contabilidade. Todos os direitos reservados. Tubarão - SC.
+            </div>
+            <div class="footer-bottom-links">
+                <a href="privacidade.html">Política de Privacidade (LGPD)</a>
+                <a href="#home">Voltar ao Topo ↑</a>
+            </div>
+        </div>
     </footer>
 
-    <!-- Lightbox -->
+    <!-- Lightbox de Fotos da Equipe -->
     <div class="lightbox-overlay" id="lightbox">
-        <span class="lightbox-close">&times;</span>
-        <img src="" alt="Foto ampliada" id="lightbox-img">
+        <span class="lightbox-close" aria-label="Fechar foto">&times;</span>
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg'/%3E" alt="Foto ampliada do membro da equipe Orprocon" id="lightbox-img">
     </div>
 
-    <!-- WhatsApp flutuante -->
-    <a href="https://wa.me/5548991781362" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Fale conosco no WhatsApp">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
+    <!-- WhatsApp Flutuante com Tooltip -->
+    <div class="whatsapp-float-container">
+        <div class="whatsapp-tooltip" id="whatsapp-tooltip">
+            <span>Dúvidas? Fale com nossa equipe!</span>
+            <span class="close-tooltip" id="close-whatsapp-tooltip">&times;</span>
+        </div>
+        <a href="https://wa.me/5548991781362?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Orprocon%20e%20gostaria%20de%20atendimento." class="whatsapp-float" target="_blank" rel="noopener" aria-label="Fale conosco no WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
 
-    <!-- Banner de cookies (LGPD) -->
+    <!-- Banner de Cookies (LGPD) -->
     <div class="cookie-banner" id="cookie-banner">
-        <p>Usamos cookies essenciais para o funcionamento do site. Saiba mais na nossa <a href="privacidade.html">Política de Privacidade</a>.</p>
+        <p>Utilizamos cookies essenciais para garantir o funcionamento seguro do nosso site. Para saber mais, consulte a nossa <a href="privacidade.html">Política de Privacidade</a>.</p>
         <div class="cookie-banner-actions">
-            <button type="button" class="btn-cookie-aceitar" id="cookie-aceitar">Entendi</button>
+            <button type="button" class="btn-cookie-aceitar" id="cookie-aceitar">Entendi e Concordo</button>
         </div>
     </div>
 
+    <!-- Scripts -->
     <script src="assets/js/header.js" defer></script>
     <script src="assets/js/home.js" defer></script>
     <script src="assets/js/cookies.js" defer></script>

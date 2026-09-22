@@ -3,7 +3,6 @@
    ========================================================================== */
 
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
     background-color: var(--light-bg);
     min-height: 100vh;
     display: flex;
@@ -14,34 +13,38 @@ body {
 
 .card {
     background: var(--white);
-    border-radius: 12px;
-    box-shadow: 0 10px 40px rgba(15, 44, 89, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 15px 45px rgba(15, 44, 89, 0.12);
     padding: 50px 40px;
-    max-width: 480px;
+    max-width: 500px;
     width: 100%;
     text-align: center;
+    border: 1px solid var(--border-color);
 }
 
 .check-icon {
-    width: 72px;
-    height: 72px;
-    background: #e7f4ea;
+    width: 76px;
+    height: 76px;
+    background: #E8F8F0;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto 24px;
+    border: 2px solid rgba(39, 174, 96, 0.2);
 }
 
 .check-icon svg {
-    width: 36px;
-    height: 36px;
+    width: 38px;
+    height: 38px;
 }
 
 h1 {
     color: var(--primary-color);
     font-size: 24px;
+    font-weight: 800;
     margin-bottom: 14px;
+    line-height: 1.3;
 }
 
 p {
@@ -52,29 +55,38 @@ p {
 }
 
 .btn-voltar {
-    display: inline-block;
-    background-color: var(--accent-color);
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(135deg, var(--accent-color) 0%, #D0761E 100%);
     color: var(--white);
     padding: 13px 32px;
-    border-radius: 6px;
+    border-radius: 8px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 15px;
-    transition: background-color 0.3s;
+    transition: var(--transition);
+    box-shadow: 0 6px 18px rgba(230, 138, 46, 0.35);
 }
 
 .btn-voltar:hover {
-    background-color: #e8890f;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 22px rgba(230, 138, 46, 0.45);
 }
 
 .whatsapp-link {
-    display: block;
-    margin-top: 20px;
-    color: var(--secondary-color);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 14px;
+    color: #128C7E;
     font-size: 14px;
+    font-weight: 600;
     text-decoration: none;
+    transition: var(--transition);
 }
 
 .whatsapp-link:hover {
+    color: #075E54;
     text-decoration: underline;
 }
