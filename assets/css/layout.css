@@ -470,6 +470,15 @@ footer {
         padding: 12px 6%;
     }
 
+    /* No mobile, o backdrop-filter do header rolado fazia o menu (position: fixed)
+       ficar preso dentro do header em vez da tela — isso empurrava a página pro lado
+       e deixava o menu cortado/branco. Aqui usamos fundo sólido no lugar do blur. */
+    header.scrolled {
+        -webkit-backdrop-filter: none;
+        backdrop-filter: none;
+        background-color: var(--white);
+    }
+
     .menu-toggle {
         display: flex;
         flex-direction: column;
@@ -507,23 +516,31 @@ footer {
     .nav-wrapper {
         position: fixed;
         top: 0;
-        right: -100%;
+        right: 0;
+        bottom: 0;
         width: 80%;
         max-width: 340px;
         height: 100vh;
+        height: 100dvh; /* altura real da tela no celular (descontando a barra do navegador) */
         background-color: var(--white);
-        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.15);
+        box-shadow: none;
         flex-direction: column;
         justify-content: flex-start;
         align-items: stretch;
-        padding: 90px 24px 40px 24px;
-        transition: right 0.35s ease;
+        padding: 90px 24px calc(40px + env(safe-area-inset-bottom, 0px)) 24px;
+        transform: translateX(100%);
+        visibility: hidden;
+        transition: transform 0.35s ease, visibility 0s linear 0.35s, box-shadow 0.35s ease;
         overflow-y: auto;
+        overscroll-behavior: contain;
         z-index: 999;
     }
 
     .nav-wrapper.open {
-        right: 0;
+        transform: translateX(0);
+        visibility: visible;
+        box-shadow: -10px 0 30px rgba(0, 0, 0, 0.15);
+        transition: transform 0.35s ease, visibility 0s linear 0s, box-shadow 0.35s ease;
     }
 
     nav ul {

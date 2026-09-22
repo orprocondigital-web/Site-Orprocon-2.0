@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     lightboxImg.src = img.src;
                     lightboxImg.alt = img.alt || 'Foto ampliada';
                     lightbox.classList.add('active');
-                    document.body.style.overflow = 'hidden';
+                    document.documentElement.style.overflow = 'hidden';
                 }
             });
         });
@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
         function closeLightbox() {
             lightbox.classList.remove('active');
             lightboxImg.src = '';
-            document.body.style.overflow = '';
+            document.documentElement.style.overflow = '';
         }
 
         lightbox.addEventListener('click', function (e) {

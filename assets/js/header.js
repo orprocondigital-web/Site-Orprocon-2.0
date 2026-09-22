@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const isOpen = navWrapper.classList.toggle('open');
         menuToggle.classList.toggle('active', isOpen);
         menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
-        document.body.style.overflow = isOpen ? 'hidden' : '';
+        document.documentElement.style.overflow = isOpen ? 'hidden' : '';
     });
 
     // Fecha o menu mobile ao clicar em qualquer link
@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
             navWrapper.classList.remove('open');
             menuToggle.classList.remove('active');
             menuToggle.setAttribute('aria-expanded', 'false');
-            document.body.style.overflow = '';
+            document.documentElement.style.overflow = '';
         });
     });
 
@@ -48,7 +48,7 @@ document.addEventListener('DOMContentLoaded', function () {
             navWrapper.classList.remove('open');
             menuToggle.classList.remove('active');
             menuToggle.setAttribute('aria-expanded', 'false');
-            document.body.style.overflow = '';
+            document.documentElement.style.overflow = '';
         }
     });
 
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
             navWrapper.classList.remove('open');
             menuToggle.classList.remove('active');
             menuToggle.setAttribute('aria-expanded', 'false');
-            document.body.style.overflow = '';
+            document.documentElement.style.overflow = '';
         }
     });
 });

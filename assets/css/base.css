@@ -46,6 +46,15 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+/* Trava a rolagem lateral no celular (iOS/Android ignoram o overflow-x só no body).
+   “clip” corta o que vazar para a direita sem quebrar o header fixo (sticky). */
+@supports (overflow: clip) {
+    html,
+    body {
+        overflow-x: clip;
+    }
+}
+
 img {
     max-width: 100%;
     height: auto;
