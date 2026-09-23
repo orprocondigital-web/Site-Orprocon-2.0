@@ -1119,27 +1119,34 @@ section {
 }
 
 .mvv-card {
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
-    color: var(--white);
-    border-radius: 12px;
-    padding: 36px 32px;
-    box-shadow: var(--shadow-lg);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    column-gap: 14px;
+    row-gap: 14px;
+    align-content: start;
+    background-color: var(--light-bg);
+    border-left: 3px solid var(--accent-color);
+    border-radius: 4px 12px 12px 4px;
+    padding: 30px 32px;
 }
 
 .mvv-card .mvv-icon {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #F7DC6F;
-    margin-bottom: 18px;
+    width: 40px;
+    height: 40px;
+    font-size: 17px;
+    border-radius: 10px;
 }
 
 .mvv-card h3 {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 800;
-    margin-bottom: 12px;
+    color: var(--primary-color);
 }
 
 .mvv-card p {
-    color: rgba(255, 255, 255, 0.85);
+    grid-column: 1 / -1;
+    color: var(--muted-text);
     font-size: 15.5px;
     line-height: 1.75;
 }
@@ -1205,7 +1212,7 @@ section {
     }
 
     .mvv-card {
-        padding: 28px 22px;
+        padding: 24px 22px;
     }
 
     .history-culture {
