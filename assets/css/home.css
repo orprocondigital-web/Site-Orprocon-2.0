@@ -984,6 +984,241 @@ section {
 }
 
 /* --------------------------------------------------------------------------
+   Nossa História
+   -------------------------------------------------------------------------- */
+.history {
+    background-color: var(--light-bg);
+}
+
+.history-timeline {
+    list-style: none;
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 0;
+    position: relative;
+}
+
+.history-timeline::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    bottom: 6px;
+    left: 9px;
+    width: 2px;
+    background: linear-gradient(180deg, var(--accent-color), var(--secondary-light));
+    opacity: 0.5;
+}
+
+.history-item {
+    position: relative;
+    padding: 0 0 36px 48px;
+}
+
+.history-item:last-child {
+    padding-bottom: 0;
+}
+
+.history-item::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--white);
+    border: 4px solid var(--accent-color);
+    box-sizing: border-box;
+}
+
+.history-period {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    color: var(--accent-color);
+    margin-bottom: 4px;
+}
+
+.history-item h3 {
+    font-size: 20px;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.history-item p {
+    color: var(--muted-text);
+    font-size: 15.5px;
+    line-height: 1.7;
+}
+
+.history-item p + p {
+    margin-top: 10px;
+}
+
+.history-culture {
+    max-width: 860px;
+    margin: 50px auto 0 auto;
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    background-color: var(--white);
+    border-left: 4px solid var(--accent-color);
+    border-radius: 12px;
+    padding: 32px;
+    box-shadow: var(--shadow-md);
+}
+
+.history-culture-icon,
+.mvv-icon,
+.value-icon {
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    background-color: var(--gold-light);
+    color: var(--accent-color);
+}
+
+.history-culture h3 {
+    font-size: 20px;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.history-culture p {
+    color: var(--muted-text);
+    font-size: 15.5px;
+    line-height: 1.7;
+}
+
+.history-culture p + p {
+    margin-top: 10px;
+}
+
+/* --------------------------------------------------------------------------
+   Missão, Visão e Valores
+   -------------------------------------------------------------------------- */
+.mvv {
+    background-color: var(--white);
+}
+
+.mvv-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.mvv-card {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    color: var(--white);
+    border-radius: 12px;
+    padding: 36px 32px;
+    box-shadow: var(--shadow-lg);
+}
+
+.mvv-card .mvv-icon {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #F7DC6F;
+    margin-bottom: 18px;
+}
+
+.mvv-card h3 {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.mvv-card p {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 15.5px;
+    line-height: 1.75;
+}
+
+.values-title {
+    text-align: center;
+    font-size: clamp(22px, 2.4vw, 28px);
+    color: var(--primary-color);
+    font-weight: 800;
+    margin: 60px 0 30px 0;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.value-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 28px 24px;
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.value-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--accent-color);
+}
+
+.value-card .value-icon {
+    margin-bottom: 16px;
+}
+
+.value-card h4 {
+    font-size: 17px;
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.value-card p {
+    color: var(--muted-text);
+    font-size: 14.5px;
+    line-height: 1.7;
+}
+
+@media (max-width: 1000px) {
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .mvv-grid,
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .mvv-card {
+        padding: 28px 22px;
+    }
+
+    .history-culture {
+        flex-direction: column;
+        padding: 24px 20px;
+    }
+
+    .values-title {
+        margin-top: 45px;
+    }
+}
+
+/* --------------------------------------------------------------------------
    Responsividade (Tablets e Mobiles)
    -------------------------------------------------------------------------- */
 @media (max-width: 1200px) {
