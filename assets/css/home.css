@@ -1146,6 +1146,39 @@ section {
     line-height: 1.75;
 }
 
+/* Card de Valores: ocupa a largura toda e lista os valores em 2 colunas */
+.mvv-card-valores {
+    grid-column: 1 / -1;
+}
+
+.mvv-valores-list {
+    grid-column: 1 / -1;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px 40px;
+}
+
+.mvv-valores-list li {
+    position: relative;
+    padding-left: 26px;
+    color: var(--muted-text);
+    font-size: 15.5px;
+    line-height: 1.65;
+}
+
+.mvv-valores-list li i {
+    position: absolute;
+    left: 0;
+    top: 6px;
+    font-size: 14px;
+    color: var(--accent-color);
+}
+
+.mvv-valores-list li strong {
+    color: var(--primary-color);
+}
+
 .values-title {
     text-align: center;
     font-size: clamp(22px, 2.4vw, 28px);
@@ -1208,6 +1241,11 @@ section {
 
     .mvv-card {
         padding: 24px 22px;
+    }
+
+    .mvv-valores-list {
+        grid-template-columns: 1fr;
+        gap: 14px;
     }
 
     .history-culture {
