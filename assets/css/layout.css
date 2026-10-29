@@ -229,6 +229,7 @@ nav ul li a.active {
     display: flex;
     align-items: center;
     gap: 12px;
+    transition: bottom 0.25s ease;
 }
 
 .whatsapp-tooltip {
@@ -693,5 +694,16 @@ footer {
         right: 12px;
         bottom: 12px;
         max-width: none;
+        padding: 16px 18px;
+    }
+
+    .cookie-banner p {
+        font-size: 13px;
+        margin-bottom: 12px;
+    }
+
+    /* Enquanto o banner de cookies estiver aberto, o WhatsApp sobe para não ficar escondido atrás dele */
+    .cookies-aberto .whatsapp-float-container {
+        bottom: calc(var(--cookie-h, 0px) + 24px);
     }
 }

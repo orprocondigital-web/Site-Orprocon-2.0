@@ -9,6 +9,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (!banner || !btnAceitar) return;
 
+    // Informa ao CSS a altura do banner, para o botão do WhatsApp (mobile)
+    // subir e não ficar escondido atrás dele enquanto estiver aberto.
+    function atualizarAltura() {
+        document.documentElement.style.setProperty('--cookie-h', banner.offsetHeight + 'px');
+    }
+
+    function abrirBanner() {
+        banner.classList.add('visible');
+        document.body.classList.add('cookies-aberto');
+        atualizarAltura();
+        window.addEventListener('resize', atualizarAltura);
+    }
+
+    function fecharBanner() {
+        banner.classList.remove('visible');
+        document.body.classList.remove('cookies-aberto');
+        window.removeEventListener('resize', atualizarAltura);
+    }
+
     let jaAceitou = false;
     try {
         jaAceitou = localStorage.getItem(CHAVE) === 'true';
@@ -18,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     if (!jaAceitou) {
-        banner.classList.add('visible');
+        abrirBanner();
     }
 
     btnAceitar.addEventListener('click', function () {
@@ -27,6 +46,6 @@ document.addEventListener('DOMContentLoaded', function () {
         } catch (e) {
             // Sem localStorage disponível, apenas fecha o banner nesta visita.
         }
-        banner.classList.remove('visible');
+        fecharBanner();
     });
 });
